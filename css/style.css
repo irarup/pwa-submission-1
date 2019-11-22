@@ -1,0 +1,302 @@
+.brand-logo img{
+	height: 56px;
+	width: auto;
+	padding: 5px;
+}
+.nav-wrapper{
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+.caption{
+	font-family: great vibes,cursive;
+}
+
+#home{
+  background: #f5cbde;
+}
+
+#pendampig{
+  text-align: center;
+}
+
+.pd .card{
+  border-radius: 7%;
+}
+
+
+.pd ul {
+  text-align: center;
+  text-decoration: disc;
+}
+
+
+.pd ul li {
+  display: inline;
+  
+}
+
+.wedding-icon{
+  height: 50px;
+  width: 50px;
+  vertical-align:middle;
+}
+
+#gift{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wish-input{
+  width: 40% !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 980px){
+  .pd .bridesmaid{
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/bridesmaid.jpg);
+  }
+
+  .pd .groomsmens{
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/groomsman.jpg);
+  }
+
+  #hiburan{
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/live-music.jpg);
+  }
+
+  .pd .bridesmaid img, .pd .groomsmens img, #hiburan img{
+    display: none;
+  }
+}
+
+
+/* countdown style*/
+
+@import url(&quot;https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900&quot;);
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+}
+
+.container-counter {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 46%;
+  height: auto;
+}
+
+h1 {
+  font-family: &quot;Lato&quot;, sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #000;
+}
+
+#timer {
+  color: #F6F4F3;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: &quot;Lato&quot;, sans-serif;
+  font-size: .7em;
+  letter-spacing: 5px;
+  margin-top: 25%;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+.days {
+  background: #EF2F3C;
+}
+
+.hours {
+  background: #F6F4F3;
+  color: #183059;
+}
+
+.minutes {
+  background: #276FBF;
+}
+
+.seconds {
+  background: #F0A202;
+}
+
+.numbers {
+  font-family: &quot;Montserrat&quot;, sans-serif;
+  color: #183059;
+  font-size: 4em;
+}
+
+.white {
+  position: absolute;
+  background: #F6F4F3;
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 2%;
+}
+.white .triangle {
+  border-bottom: 14px solid #F6F4F3;
+}
+.white .string {
+  background: #F6F4F3;
+  border: 1px solid #F6F4F3;
+}
+
+.red {
+  position: absolute;
+  background: #EF2F3C;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+}
+.red .triangle {
+  border-bottom: 14px solid #EF2F3C;
+}
+.red .string {
+  background: #EF2F3C;
+  border: 1px solid #EF2F3C;
+}
+
+.blue {
+  position: absolute;
+  background: #276FBF;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+}
+.blue .triangle {
+  border-bottom: 14px solid #276FBF;
+}
+.blue .string {
+  background: #276FBF;
+  border: 1px solid #276FBF;
+}
+
+.balloon {
+  border: 1px solid #000;
+  border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 40%;
+  left: 22%;
+  background: #000;
+  border-radius: 50%;
+}
+.eye:after {
+  content: '';
+  left: 35px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+}
+
+.mouth {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.happy {
+  border: 2px solid;
+  border-color: transparent #000 #000 transparent;
+  transform: rotate(45deg);
+}
+
+.triangle {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+.string {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background: #F6F4F3;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star-red {
+  width: 30px;
+  height: 30px;
+  margin-left: 51px;
+  margin-top: -5px;
+  background: #EF2F3C;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+@media only screen and (max-width: 992px){
+  .balloon{
+    display: none;
+  }
+  #timer{
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 920px){
+  .days, .hours, .minutes, .seconds {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .container-counter {
+    height: auto;
+  }
+
+}
+
+/* end counter style */

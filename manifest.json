@@ -1,0 +1,16 @@
+{
+    "name": "Amata Wedding Invitation",
+    "short_name": "Amata Wedding",
+    "description": "Undangan Pernikahan Online",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffab91",
+    "theme_color": "#eb9a85",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

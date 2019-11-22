@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Amata Wedding</title>
+  <meta name="description" content="My first PWA"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#eb9a85"/>
+</head>
+<body>
+  <!-- Navigasi -->
+  <nav class="deep-orange lighten-3" role="navigation">
+    <div class="nav-wrapper container-fluid">
+      <a href="/" class="brand-logo" id="logo-container"><img src="/img/amata-wedding-logo.png"></a>
+      <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+      
+      <ul class="topnav right hide-on-med-and-down"></ul>
+      <ul class="sidenav" id="nav-mobile"></ul>
+    </div>
+  </nav>
+  <!-- Akhir Navigasi -->
+  <!-- content -->
+  <div class="container-fluid" id="body-content"></div>
+  <footer class="page-footer deep-orange lighten-3 align-center">
+     &copy; Ira Rupaida - 2019
+  </footer>
+
+      
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/counter.js"></script>
+  <script type="text/javascript">
+  //silder
+      $(document).ready(function(){
+        $('.slider').slider();
+      });
+  </script>
+  <script>
+  // REGISTER SERVICE WORKER
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(function() {
+          console.log("Pendaftaran ServiceWorker berhasil");
+        })
+        .catch(function() {
+          console.log("Pendaftaran ServiceWorker gagal");
+        });
+    });
+  } else {
+    console.log("ServiceWorker belum didukung browser ini.");
+  }
+</script>
+</body>
+</html>
+
