@@ -1,8 +1,9 @@
 
-const CACHE_NAME = "firstpwa-v4";
+const CACHE_NAME = "firstpwa-v1";
 var urlsToCache = [
   "/",
   "/icon.png",
+  "/icon_apple.png",
   "/index.html",
   "/manifest.json",
   "/nav.html",
@@ -25,8 +26,7 @@ var urlsToCache = [
   "/img/live-music.jpg",
   "/img/ring-icon.png",
   "/img/slide-1.jpg",
-  "/img/slide-2.jpg",
-  "/img/slide-3.jpg",
+  "/img/tempat.jpg",
   "/js/materialize.min.js",
   "/js/nav.js",
   "/js/counter.js",
@@ -36,12 +36,12 @@ var urlsToCache = [
   "/pages/bridegroom.html",
   "/pages/guestBook.html",
   "/pages/theParty.html",
+  "https://fonts.googleapis.com/css?family=Roboto",
   "https://code.jquery.com/jquery-3.4.1.min.js",
   "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
   "https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.woff2",
   "https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.woff",
-  "https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.ttf",
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.168911386138!2d107.82267831381685!3d-6.9893759949509064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c5c5a70ba5d1%3A0x2a85e394d9b2a813!2sOniba%20Center!5e0!3m2!1sid!2sid!4v1574341445377!5m2!1sid!2sid"
+  "https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.ttf"
 ];
  
 self.addEventListener("install", function(event) {
